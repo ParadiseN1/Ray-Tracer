@@ -1,0 +1,121 @@
+PARAMS{
+	_width: 800
+	_height: 500
+	_fov: 70
+	_env_light: {0.3, 0.3, 0.3}
+	_camera->ori: {0.0, 5.0, 10.0}
+	_camera->dir: {0.0, 0.0, 0.0}
+}
+
+
+OBJECTS[12]{
+
+	sphere{
+		_center: {0.0, 5.0, 0.0}
+		_radius: 1.0
+		_color: {0.6, 0.5, 0.01}
+		_diffuse: 1.0
+		_specular: 0.1
+	}
+	sphere{
+		_center: {5.0, 5.0, 0.0}
+		_radius: 1.0
+		_color: {0.7, 0.01, 0.01}
+		_diffuse: 1.0
+		_specular: 0.1
+	}
+	sphere{
+		_center: {0.0, 10.0, 0.0}
+		_radius: 1.0
+		_color: {0.7, 0.01, 0.01}
+		_diffuse: 1.0
+		_specular: 0.1
+	}
+	sphere{
+		_center: {-5.0, 5.0, 0.0}
+		_radius: 1.0
+		_color: {0.7, 0.01, 0.01}
+		_diffuse: 1.0
+		_specular: 0.1
+	}
+	sphere{
+		_center: {0.0, 0.0, 0.0}
+		_radius: 1.0
+		_color: {0.7, 0.01, 0.01}
+		_diffuse: 1.0
+		_specular: 0.1
+	}
+
+
+	cylinder{
+		_center: {0.0, 0.0, 0.0}
+		_radius: 0.5
+		_dir: {5.0, 5.0, 0.0}
+		_color: {0.01, 0.01, 0.7}
+		_diffuse: 1.0
+		_specular: 0.1
+	}
+	cylinder{
+		_center: {0.0, 0.0, 0.0}
+		_radius: 0.5
+		_dir: {-5.0, 5.0, 0.0}
+		_color: {0.01, 0.01, 0.7}
+		_diffuse: 1.0
+		_specular: 0.1
+	}
+	cylinder{
+		_center: {0.0, 10.0, 0.0}
+		_radius: 0.5
+		_dir: {5.0, 5.0, 0.0}
+		_color: {0.01, 0.01, 0.7}
+		_diffuse: 1.0
+		_specular: 0.1
+	}
+	cylinder{
+		_center: {0.0, 10.0, 0.0}
+		_radius: 0.5
+		_dir: {-5.0, 5.0, 0.0}
+		_color: {0.01, 0.01, 0.7}
+		_diffuse: 1.0
+		_specular: 0.1
+	}
+
+
+	plane{
+		_center: {0.0, 0.0, 0.0}
+		_normal: {0.0, 1.0, 0.0}
+		_color: {0.7, 0.7, 0.7}
+		_diffuse: 1.0
+		_specular: 0.0
+	}
+	plane{
+		_center: {0.0, 0.0, -20.0}
+		_normal: {0.0, 0.0, 1.0}
+		_color: {0.2, 0.2, 0.2}
+		_diffuse: 1.0
+		_specular: 0.0
+	}
+	plane{
+		_center: {0.0, 10.0, -20.0}
+		_normal: {0.0, -1.0, 0.0}
+		_color: {0.7, 0.7, 0.7}
+		_diffuse: 1.0
+		_specular: 0.0
+	}
+}
+
+
+LIGHT_SOURCES[2]{
+
+	light{
+		_origin: {6.0, 5.0, 6.0}
+		_intensity: {500.0, 500.0, 500.0}
+	}
+
+	light{
+		_origin: {-6.0, 5.0, 6.0}
+		_intensity: {500.0, 500.0, 500.0}
+	}
+
+}
+
